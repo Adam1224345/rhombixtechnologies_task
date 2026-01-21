@@ -403,7 +403,7 @@ function App() {
             </div>
           ) : (
             <div className="now-playing-card empty-state">
-              {/* ✅ FIXED: DIRECT STRING PATH */}
+              {/* DIRECT STRING PATH */}
               <img 
                 src="/default-cover.jpg"
                 alt="Music Note" 
