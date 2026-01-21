@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import './App.css';
 
-// ✅ SMART URL HANDLING
-// If running 'npm start' (Development), it uses localhost:5000
+// If running local host frontend  (Development), it uses localhost:5000
 // If running via Flask (Production), it uses the current domain (relative path)
 const API_BASE_URL = process.env.NODE_ENV === 'development' ? 'http://localhost:5000' : '';
 
@@ -360,7 +359,7 @@ function App() {
                   />
                 ) : null}
                 
-                {/* ✅ FIXED: DIRECT STRING PATH */}
+                {/* DIRECT STRING PATH */}
                 <img 
                     src="/default-cover.jpg"
                     alt="Default Art"
@@ -404,7 +403,7 @@ function App() {
             </div>
           ) : (
             <div className="now-playing-card empty-state">
-              {/* ✅ FIXED: DIRECT STRING PATH */}
+              {/*  DIRECT STRING PATH */}
               <img 
                 src="/default-cover.jpg"
                 alt="Music Note" 
